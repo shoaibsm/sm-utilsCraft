@@ -2,7 +2,7 @@ import React from 'react'
 import './WarningMessage.scss'
 import { CiWarning } from "react-icons/ci";
 
-function WarningMessage() {
+function WarningMessage({ message, buttonText, onButtonClick }) {
     return (
         <div className='WarningMessage'>
             <div className="WarningMessage__msgTop">
@@ -17,10 +17,10 @@ function WarningMessage() {
                     <div className="warning-icon">
                         <CiWarning className="icon" />
                     </div>
-                    <p className="WarningMessage__txtDesc">WARNING :</p>
+                    <p className="WarningMessage__txtDesc">WARNING : {message}</p>
                 </div>
                 <div className="WarningMessage__action-Box">
-                    <p className="actionTxt">OK</p>
+                    <button className="actionTxt" onClick={onButtonClick}>{buttonText}</button>
                 </div>
             </div>
         </div>

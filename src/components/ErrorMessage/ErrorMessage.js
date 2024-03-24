@@ -2,7 +2,7 @@ import React from 'react'
 import './ErrorMessage.scss'
 import { MdErrorOutline } from "react-icons/md";
 
-function ErrorMessage() {
+function ErrorMessage({ message, buttonText, onButtonClick }) {
     return (
         <div className='ErrorMessage'>
             <div className="ErrorMessage__msgTop">
@@ -21,10 +21,10 @@ function ErrorMessage() {
 
                 <div className="ErrorMessage__txtDesc-Box">
 
-                    <p className="ErrorMessage__txtDesc">Message Sent successFully </p>
+                    <p className="ErrorMessage__txtDesc">{message} </p>
                 </div>
                 <div className="ErrorMessage__action-Box">
-                    <p className="actionTxt">OK</p>
+                    <button className="actionTxt" onClick={onButtonClick}>{buttonText}</button>
                 </div>
 
             </div>

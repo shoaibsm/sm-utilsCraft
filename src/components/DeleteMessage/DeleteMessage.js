@@ -2,7 +2,7 @@ import React from 'react'
 import './DeleteMessage.scss'
 import { IoCloseCircleOutline } from "react-icons/io5";
 
-function DeleteMessage() {
+function DeleteMessage({ message, buttonText, onButtonClick }) {
     return (
         <div className='DeleteMessage'>
             <div className="DeleteMessage__msgTop">
@@ -22,10 +22,10 @@ function DeleteMessage() {
 
                 <div className="DeleteMessage__txtDesc-Box">
 
-                    <p className="DeleteMessage__txtDesc">Some thing went wrong</p>
+                    <p className="DeleteMessage__txtDesc">{message}</p>
                 </div>
                 <div className="DeleteMessage__action-Box">
-                    <p className="actionTxt">Close</p>
+                    <button className="actionTxt" onClick={onButtonClick}>{buttonText}</button>
                 </div>
 
             </div>

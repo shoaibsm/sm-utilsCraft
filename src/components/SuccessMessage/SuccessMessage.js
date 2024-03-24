@@ -2,7 +2,7 @@ import React from 'react'
 import './SuccessMessage.scss'
 import { FaRegCircleCheck } from "react-icons/fa6";
 
-function SuccessMessage() {
+function SuccessMessage({ message, buttonText, onButtonClick }) {
     return (
         <div className='SuccessMessage'>
             <div className="SuccessMessage__msgTop">
@@ -21,10 +21,10 @@ function SuccessMessage() {
 
                 <div className="SuccessMessage__txtDesc-Box">
 
-                    <p className="SuccessMessage__txtDesc">Message Sent successFully </p>
+                    <p className="SuccessMessage__txtDesc">{message}</p>
                 </div>
                 <div className="SuccessMessage__action-Box">
-                    <p className="actionTxt">OK</p>
+                    <p className="actionTxt" onClick={onButtonClick}>{buttonText}</p>
                 </div>
 
             </div>

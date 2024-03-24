@@ -1,14 +1,23 @@
 {
   "name": "sm-utilscraft",
   "version": "1.0.0",
-  "description": "",
+  "description": "Utility library for managing flash messages, alerts, notifications, loading bars, and confirmation messages in web applications.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build:scss",
+    "prepare": "npm run build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["flash messages", "alerts", "notifications", "loading bars", "confirmation messages", "utility library", "web applications", "frontend", "UI components", "React", "Vue", "Angular", "JavaScript", "TypeScript", "npm package"],
+  "author": "Shoaib Mohammed <shoaib.sm6655@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shoaibsm/sm-utilsCraft.git/issues"
+  },
+  "homepage": "https://github.com/shoaibsm/sm-utilsCraft.git#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shoaibsm/sm-utilsCraft.git"
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
