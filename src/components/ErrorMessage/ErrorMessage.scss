@@ -1,0 +1,110 @@
+.ErrorMessage {
+    width: 300px;
+    height: 320px;
+    margin-inline: auto;
+    margin-top: 10%;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.4);
+    position: relative;
+
+    .ErrorMessage__msgTop {
+        height: 40%;
+        background-color: #ffffff;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+
+
+        .ErrorMessage__txt-Box {
+
+            .ErrorMessage__txt {
+                color: #780000;
+                font-size: 2rem;
+                font-weight: 500;
+                text-align: center;
+                padding-top: 25px;
+            }
+        }
+    }
+
+    .ErrorMessage__icon-Box {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        position: absolute;
+        top: calc(40% - 50px);
+        left: 50%;
+        transform: translateX(-50%);
+        // background: linear-gradient(to right, #00A9FF, #21b5ff);
+        background: linear-gradient(to right, #c1121f, #ff2231);
+        box-shadow: 1px 9px 10px 1px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .ErrorMessage__icon {
+            font-size: 2rem;
+            color: #ffffff;
+        }
+    }
+
+    .ErrorMessage__msgBottom {
+        height: 60%;
+        // background: linear-gradient(to right, #00A9FF, #62cbff);
+        background: linear-gradient(to right, #c1121f, #ff2231);
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+
+        .ErrorMessage__txtDesc-Box {
+            width: 100%;
+            height: 75%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .ErrorMessage__txtDesc {
+                text-align: center;
+                width: 100%;
+                margin-top: 30px;
+                margin-inline: 16px;
+                padding: 4px;
+                overflow: hidden;
+                color: #ffffff;
+                word-wrap: break-word;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                max-width: 100%;
+            }
+        }
+
+        .ErrorMessage__action-Box {
+            height: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 16px;
+
+            .actionTxt {
+                text-align: center;
+                width: 100px;
+                color: var(--accent-color);
+                font-weight: 600;
+                padding: 2px 16px;
+                background-color: var(--background-color);
+                border-radius: 20px;
+                letter-spacing: 1px;
+                cursor: pointer;
+                box-shadow: 2px 2px 20px 1px rgba(255, 255, 255, 0.45);
+                transition: background-color 0.2s ease-in-out;
+
+                &:hover {
+                    background-color: #DEE2E6;
+                }
+
+                &:active {
+                    background-color: var(--background-color);
+                }
+
+            }
+        }
+    }
+}

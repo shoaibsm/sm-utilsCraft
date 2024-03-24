@@ -1,0 +1,94 @@
+.WarningMessage {
+    width: 300px;
+    margin-inline: auto;
+    margin-top: 10%;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.4);
+    position: relative;
+
+    .WarningMessage__msgTop {
+        background-color: #ffffff;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+
+        .WarningMessage__txt-Box {
+
+            .WarningMessage__txt {
+                color: #fb8500;
+                font-size: 0.7rem;
+                font-weight: 500;
+                padding: 4px 8px;
+            }
+        }
+    }
+
+    .WarningMessage__msgBottom {
+        background: linear-gradient(to right, #00A9FF, #62cbff);
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+
+        .WarningMessage__txtDesc-Box {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+
+            .warning-icon {
+                margin-block: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 8px;
+
+                .icon {
+                    color: #fb8500;
+                    font-size: 2rem;
+                }
+            }
+
+            .WarningMessage__txtDesc {
+                font-size: 0.8rem;
+                width: 100%;
+                margin-left: 8px;
+                padding: 4px;
+                overflow: hidden;
+                color: #ffffff;
+                word-wrap: break-word;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                max-width: 100%;
+            }
+        }
+
+        .WarningMessage__action-Box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 16px;
+            padding-bottom: 8px;
+
+            .actionTxt {
+                text-align: center;
+                width: 100px;
+                color: var(--accent-color);
+                font-weight: 600;
+                padding: 2px 16px;
+                background-color: var(--background-color);
+                border-radius: 20px;
+                letter-spacing: 1px;
+                user-select: none;
+                cursor: pointer;
+                box-shadow: 2px 2px 20px 1px rgba(255, 255, 255, 0.45);
+                transition: background-color 0.2s ease-in-out;
+
+                &:hover {
+                    background-color: #DEE2E6;
+                }
+
+                &:active {
+                    background-color: var(--background-color);
+                }
+            }
+        }
+    }
+}
